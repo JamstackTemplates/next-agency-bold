@@ -17,16 +17,18 @@ The `.claude/skills/` folder holds `write-plan` (drafts `plan/PLAN.md`) and `cle
 
 ## Structure and content
 
-`content/business.ts` holds the starter's shared business details and sample copy. When building a
-site, write page-specific copy directly in the route's `app/**/page.tsx` as JSX children of named React
-components. Put headings, calls to action, labels and captions in page order. Backing components
-own the semantic markup, Tailwind styles, accessibility and behavior. Keep typed data in `content/`
-for values the site reads programmatically, including contact details and structured collections.
-Document fields and validate IDs, required
-fields, prices, availability and references with item-specific failures. Rename in content and
-site.config.json. Keep the provisioner's config shape: name, description, domain, optional timeZone,
-jamstacks.siteId/cdnUrl and optional provisioningId. Business data never goes there. Reuse the design's
-illustrations and palette rather than adding unrelated assets.
+File ownership for this website (**Loud Hands Studio**):
+
+- `content/business.ts` — studio name, wordmark, email, phone, Stevenson Square address, 7-day `hours`, `availability.nextStart` (`YYYY-MM`), `availability.note`, and `enquiries` guidance.
+- `content/projects.ts` — the 8 work-wall projects (`orderedProjects`, `featuredProjects`, `marqueeClients`, `projectSectors`, `filterProjects`, `validateProjects`).
+- `content/services.ts` — the 5 services with deliverables, week ranges, whole-pound GBP `fromFee` (ex-VAT), and `availability` (`open` / `limited` / `waitlist`).
+- `content/process.ts` — the 5 running-order steps (`weeks`, `summary`, `youGet`, `weNeed`, 12-week cap).
+- `app/page.tsx`, `app/work/page.tsx`, `app/services/page.tsx`, `app/process/page.tsx`, `app/contact/page.tsx`, `app/not-found.tsx` — page composition and page-specific editable prose as JSX children of named React components (`Hero`, `SelectedWork`, `ServicesList`, `ProcessTeaser`, `StudioNumbers`, `ClientQuote`, `ClosingBand`, `PricingPanel`, `DontDoBand`, `FaqSlips`, etc.).
+- `components/art/*` — bespoke inline SVG illustrations (`LoudHand`, `ShhHand`, `PosterArt`, `PasteUpWall`, `MixingDesk`, `AvailabilitySticker`, `PaperTag`, page-head art `PasteBucket`/`FeeSticker`/`Setlist`, `Icon`). Torn edges, paste shadows, masking tape and the two-ink overprint are CSS utilities in `app/tailwind.input.css` (`tear-*`, `pasted`, `masking-tape`, `overprint`).
+- `components/site-header.tsx`, `components/site-footer.tsx`, `components/page-head.tsx` — tape header, plywood footer with cropped wordmark, and colour-coded poster page heads.
+- `lib/structured-data.ts` — `ProfessionalService` JSON-LD derived from `content/business.ts` and `content/services.ts`.
+
+Document fields and validate IDs, required fields, prices, availability and references with item-specific failures. Rename in `content/business.ts` and `site.config.json`. Keep the provisioner's config shape: `name`, `description`, `domain`, optional `timeZone`, `jamstacks.siteId`/`cdnUrl` and optional `provisioningId`. Business data never goes there. Reuse the design's illustrations and palette rather than adding unrelated assets.
 
 ## Styling: Tailwind CSS v4
 

@@ -1,0 +1,19 @@
+{
+  "name": "Loud Hands Studio",
+  "description": "Bold creative agency with oversized poster type, a wheatpasted work wall, priced services and a five-step process.",
+  "tech": "next",
+  "type": "agency",
+  "style": "bold",
+  "internal": false,
+  "components": [
+    "support-form"
+  ],
+  "configFile": "site.config.json",
+  "screenshots": {
+    "light": "jamstacks/home-light.jpg",
+    "dark": "jamstacks/home-dark.jpg",
+    "theme": {
+      "strategy": "media"
+    }
+  }
+}

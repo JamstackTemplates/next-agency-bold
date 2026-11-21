@@ -1,7 +1,8 @@
 {
-  "name": "Jamstacks starter",
-  "description": "A neutral Next.js foundation for Jamstacks websites.",
-  "domain": "",
+  "name": "Loud Hands Studio",
+  "description": "Loud Hands Studio is a Manchester creative agency making brands, campaigns, motion and websites that refuse to be ignored. Studio on Stevenson Square.",
+  "domain": "next-agency-bold.jamstacks.net",
+  "timeZone": "Europe/London",
   "jamstacks": {
     "siteId": "",
     "cdnUrl": "https://cdn.jamstacks.net"

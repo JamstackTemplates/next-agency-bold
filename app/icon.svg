@@ -1,1 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="#2457a7"/><path d="M17 20h30v24H17zM24 14v36M40 14v36" fill="none" stroke="#fff" stroke-width="4"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#FFD23F" />
+  <rect x="2" y="2" width="60" height="60" fill="none" stroke="#111111" stroke-width="4" />
+  <!-- Overprint shadow -->
+  <path d="M18 32L51 15L55 42L21 39Z" fill="#2338E8" opacity="0.55" transform="translate(2, 2)" />
+  <!-- Red megaphone cone -->
+  <path d="M17 31L50 14L54 41L20 38Z" fill="#C8301B" stroke="#111111" stroke-width="3" stroke-linejoin="round" />
+  <ellipse cx="52" cy="27.5" rx="3.5" ry="13.5" fill="#111111" transform="rotate(-8 52 27.5)" />
+  <!-- Black clenched fist + handle -->
+  <path d="M11 33C11 29 15 27 20 27H26C29 27 31 29 31 33V43C31 46 29 48 25 48H22V57H13V45C11.5 43.5 11 41 11 38Z" fill="#111111" stroke="#111111" stroke-width="2" stroke-linejoin="round" />
+  <!-- Knuckle cuts -->
+  <path d="M15 33H24M15 38H24M15 43H22" stroke="#FFD23F" stroke-width="2" stroke-linecap="round" />
+  <!-- Sound burst -->
+  <path d="M56 12L61 7M58 27H63M57 42L62 47" stroke="#111111" stroke-width="2.5" stroke-linecap="round" />
+</svg>
